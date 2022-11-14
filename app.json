@@ -61,6 +61,16 @@
         {
             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
         }, 
+        { 
+            "url": "scalingo/python"
+        }
     ],
-       "addons": ["redis"]
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+"addons": ["redis"]
+}
+        }
+    }
 }
